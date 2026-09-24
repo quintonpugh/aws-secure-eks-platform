@@ -1,0 +1,5 @@
+vpc_config {
+  subnet_ids              = aws_subnet.public[*].id
+  endpoint_private_access = true
+  endpoint_public_access  = true
+}
