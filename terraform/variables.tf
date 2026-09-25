@@ -21,3 +21,7 @@ variable "vpc_cidr" {
   type        = string
   default     = "10.30.0.0/16"
 }
+variable "jenkins_admin_cidr" {
+  description = "Public IPv4 CIDR allowed to access the Jenkins web interface"
+  type        = string
+}
